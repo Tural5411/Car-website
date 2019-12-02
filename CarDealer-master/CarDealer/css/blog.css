@@ -1,0 +1,710 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.scroolTop {
+  position: fixed;
+  bottom: 40px;
+  right: -10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.scroolTop:hover .lightTop {
+  opacity: 1;
+}
+
+.scroolTop .lightTop {
+  position: relative;
+  right: 78px;
+  opacity: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+header {
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/2017/01/01-7-e1488605422439.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/2017/01/01-7-e1488605422439.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  background-position: center center;
+  padding: 200px 0px;
+  background-repeat: no-repeat;
+}
+
+header .content-product {
+  color: white;
+  font-weight: 700;
+  position: relative;
+  top: 150px;
+  left: 50px;
+}
+
+header #carstart {
+  position: relative;
+  top: -187px;
+  background: rgba(53, 53, 53, 0.219);
+  left: 0%;
+  border-bottom: 2px solid rgba(110, 110, 110, 0.57);
+  padding: 10px;
+}
+
+header #carstart span {
+  line-height: 20px;
+  font-size: 17px;
+  color: white;
+  font-weight: 200;
+  margin-left: 3px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+header #carstart span:hover {
+  color: red;
+}
+
+header #carstart span i {
+  font-size: 17px;
+}
+
+header .car-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative;
+  left: -25px;
+  top: -180px;
+}
+
+header .car-nav .sub-menu i {
+  position: relative;
+  top: -10px;
+  right: -7px;
+}
+
+header .menu i {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(-50%, 75%);
+          transform: translate(-50%, 75%);
+}
+
+header button {
+  position: relative;
+  -webkit-transform: translateY(39%);
+          transform: translateY(39%);
+  padding: 5px 10px;
+  background-color: #DB2D2E;
+  font-size: 10px;
+  font-weight: 700;
+  border: none;
+  color: white;
+}
+
+header li {
+  margin-left: 15px;
+  position: relative;
+}
+
+header li a {
+  font-size: 19px;
+}
+
+header img {
+  width: 160px;
+  height: 28px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 10px;
+}
+
+ul.menu {
+  background: transparent;
+  height: 50px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+ul.menu > li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+ul.menu > li > a {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: white;
+  padding: 0 15px;
+  line-height: 50px;
+}
+
+ul.menu ul {
+  background: whitesmoke;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 750ms all;
+  transition: 750ms all;
+  border-top: 3px solid red;
+}
+
+ul.menu ul li a {
+  display: block;
+  padding: 8px 12px;
+  color: #180c0c;
+  text-align: left;
+  font-size: 14px;
+}
+
+ul.menu > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+
+ul.menu > li ul ul {
+  top: 0px;
+  left: 180px;
+  -webkit-transition: 750ms all;
+  transition: 750ms all;
+}
+
+ul.menu ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  left: 185px;
+}
+
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes load {
+  0% {
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menu li:first-child {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.menu li:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.menu li:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menu li:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.menu li:last-child {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+#products {
+  background: whitesmoke;
+}
+
+#products .showing p {
+  color: rgba(128, 128, 128, 0.877);
+}
+
+#products .default button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.712);
+  background: transparent;
+  color: gray;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 3px;
+}
+
+#products .car-item {
+  position: relative;
+}
+
+#products .car-item .sale {
+  position: absolute;
+  top: 2%;
+  right: 10%;
+  background: #0ab67c;
+  color: white;
+  width: 45px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 2px;
+}
+
+#products .car-item .car-content {
+  padding: 5px;
+  border: 1px solid rgba(163, 160, 160, 0.349);
+  background: white;
+}
+
+#products .car-item .car-content i {
+  font-size: 10px;
+  color: #ff3300;
+}
+
+#products .car-item .car-content p {
+  font-weight: 700;
+}
+
+#products .car-item .car-content button {
+  padding: 8px 18px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#f00606), color-stop(#e73c08), to(rgba(247, 80, 3, 0.877)));
+  background: linear-gradient(to right, #f00606, #e73c08, rgba(247, 80, 3, 0.877));
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+#products .car-item .car-content button:hover {
+  color: white;
+  background: #383838;
+}
+
+#products .sidebar .rightbar .cloud a {
+  background: white;
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgba(177, 177, 177, 0.815);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#products .sidebar .rightbar .cloud a:hover {
+  background: rgba(231, 32, 32, 0.753);
+}
+
+#products .sidebar .rightbar .tablcel {
+  margin-top: 19px;
+}
+
+#products .sidebar .rightbar .tablcel a {
+  text-decoration: none;
+  color: red;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#products .sidebar .rightbar .tablcel a:hover {
+  color: black;
+}
+
+#products .sidebar .rightbar .tablcel label {
+  font-size: 14.4px;
+  cursor: pointer;
+}
+
+#products .sidebar .rightbar .tablcel .labelgrey {
+  color: rgba(153, 149, 149, 0.849);
+}
+
+#products .sidebar .rightbar .tablcel .labelred {
+  color: red;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+#products .sidebar .rightbar .tablcel .labelred:hover {
+  color: black;
+}
+
+#products .sidebar .rightbar .tablcel p {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+#products .sidebar .rightbar .tablcel h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#products .sidebar .rightbar .tablcel hr {
+  width: 20px;
+  height: 1px;
+  background: red;
+  position: relative;
+}
+
+#products .sidebar .rightbar input {
+  padding: 8px 6px;
+  background: #ebe9e9;
+  color: gray;
+  border: none;
+}
+
+#products .sidebar .rightbar button {
+  padding: 8px;
+  background: #b90707;
+  border: none;
+  color: white;
+  font-weight: 600;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+}
+
+#products .sidebar .rightbar button:hover {
+  background: black;
+  color: white;
+}
+
+#products .sidebar .rightbar .recent .post {
+  margin-top: -5px;
+}
+
+#products .sidebar .rightbar .recent .post p {
+  color: #909090;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#products .sidebar .rightbar .recent .post p:hover {
+  color: red;
+}
+
+#products .sidebar .rightbar .recent .post span {
+  position: relative;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url(https://cardealer.potenzaglobalsolutions.com/wp-content/themes/cardealer/images/default/page-footer-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://cardealer.potenzaglobalsolutions.com/wp-content/themes/cardealer/images/default/page-footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+footer .sos-icon-box1, footer .sos-icon-box2, footer .sos-icon-box3, footer .sos-icon-box4, footer .sos-icon-box5, footer .sos-icon-box6, footer .sos-icon-box7, footer .sos-icon-box8 {
+  width: 12%;
+  padding: -1px 15px;
+  background: transparent;
+  color: #cecece;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer .sos-icon-box1 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box1 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box1:hover {
+  background: #3A5897;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #426bc2;
+          box-shadow: 0 0 10px #426bc2;
+}
+
+footer .sos-icon-box2 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box2 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box2:hover {
+  background: #2aabb4;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #0cceff;
+          box-shadow: 0 0 10px #0cceff;
+}
+
+footer .sos-icon-box3 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box3 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box3:hover {
+  background: #DD4B80;
+  color: white;
+}
+
+footer .sos-icon-box4 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box4 i {
+  margin-left: 0px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box4:hover {
+  background: #E13138;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #DD4B80;
+          box-shadow: 0 0 10px #DD4B80;
+}
+
+footer .sos-icon-box5 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box5 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box5:hover {
+  background: #35C6EA;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #18f7ff;
+          box-shadow: 0 0 10px #18f7ff;
+}
+
+footer .sos-icon-box6 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box6 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box6:hover {
+  background: #C3222B;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #f53c46;
+          box-shadow: 0 0 10px #f53c46;
+}
+
+footer .sos-icon-box7 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box7 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box7:hover {
+  background: #005CFF;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #1f7df8;
+          box-shadow: 0 0 10px #1f7df8;
+}
+
+footer .sos-icon-box8 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box8 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box8:hover {
+  background: #0073B1;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #0baaff;
+          box-shadow: 0 0 10px #0baaff;
+}
+
+footer #footer-main {
+  font-size: 14px;
+  line-height: 2em;
+}
+
+footer #footer-main h5 {
+  color: whitesmoke;
+}
+
+footer #footer-main i {
+  color: rgba(218, 42, 42, 0.925);
+}
+
+footer #footer-main span {
+  color: #ccc8c8;
+}
+
+footer #footer-main p {
+  color: #cac7c7;
+}
+
+footer #footer-main hr {
+  background: red;
+  width: 20px;
+  height: 1px;
+}
+
+footer #footer-main input {
+  background: rgba(177, 169, 169, 0.438);
+  border: none;
+  padding: 5px 20px;
+  color: gray;
+}
+
+footer #footer-main button {
+  padding: 5px 15px;
+  background: #f33535;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  margin-top: 10px;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
+}
+
+footer #footer-main button:hover {
+  background: #292828;
+}
+
+#footer-main-end {
+  margin-top: 50px;
+}
+
+#footer-main-end .end-end hr {
+  background: #f33535;
+  width: 25px;
+  height: 1px;
+}
+
+#footer-main-end .end-end p {
+  font-size: 15px;
+  color: gray;
+}
+
+#footer-main-end .end-end h4 {
+  color: rgba(110, 107, 107, 0.829);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#footer-main-end .end-end button {
+  background: #f01d28;
+  color: white;
+  height: 40px;
+  width: 100px;
+  font-size: 12px;
+  border: none;
+  margin-top: 50px;
+  border-radius: 3px;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
+}
+
+#footer-main-end .end-end button:hover {
+  background: #3b3b3b;
+  -webkit-box-shadow: 0 0 10px rgba(122, 0, 0, 0.925);
+          box-shadow: 0 0 10px rgba(122, 0, 0, 0.925);
+}
+
+#footer-end {
+  margin-top: 50px;
+  background: black;
+  padding: 25px 0;
+  color: #d1cccc;
+}
+/*# sourceMappingURL=blog.css.map */

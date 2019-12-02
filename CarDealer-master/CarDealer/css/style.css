@@ -1,0 +1,1377 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.scroolTop {
+  position: fixed;
+  bottom: 40px;
+  right: -10px;
+  z-index: 100;
+  display: none;
+  -webkit-transition: 0.8s linear;
+  transition: 0.8s linear;
+  cursor: pointer;
+}
+
+.scroolTop:hover .lightTop {
+  opacity: 1;
+}
+
+.scroolTop .lightTop {
+  position: relative;
+  right: 78px;
+  opacity: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+header {
+  background: white;
+  background-size: cover;
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 135px;
+  background-repeat: no-repeat;
+}
+
+header .content-product {
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+
+header #carstart {
+  border-bottom: 2px solid rgba(110, 110, 110, 0.568);
+  position: relative;
+  background: #323232;
+  left: 0%;
+  padding: 10px;
+}
+
+header #carstart span {
+  line-height: 20px;
+  font-size: 17px;
+  color: #dadada;
+  font-weight: 200;
+  margin-left: 3px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+header #carstart span:hover {
+  color: red;
+}
+
+header #carstart span i {
+  font-size: 17px;
+}
+
+header .car-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 15px;
+  z-index: 1000;
+}
+
+header .car-nav .sub-menu i {
+  position: relative;
+  top: -10px;
+  right: -7px;
+}
+
+header .menu i {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(-50%, 75%);
+          transform: translate(-50%, 75%);
+}
+
+header button {
+  position: relative;
+  -webkit-transform: translateY(39%);
+          transform: translateY(39%);
+  padding: 5px 10px;
+  background-color: #DB2D2E;
+  font-size: 10px;
+  font-weight: 700;
+  border: none;
+  color: white;
+}
+
+header li {
+  margin-left: 15px;
+  position: relative;
+}
+
+header li a {
+  font-size: 19px;
+}
+
+header img {
+  width: 160px;
+  height: 28px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 10px;
+}
+
+ul.menu {
+  background: transparent;
+  height: 50px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+ul.menu > li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+ul.menu > li > a {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: black;
+  padding: 0 15px;
+  line-height: 50px;
+}
+
+ul.menu ul {
+  background: whitesmoke;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 750ms all;
+  transition: 750ms all;
+  border-top: 3px solid red;
+}
+
+ul.menu ul li a {
+  display: block;
+  padding: 8px 12px;
+  color: #180c0c;
+  text-align: left;
+  font-size: 14px;
+}
+
+ul.menu > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+
+ul.menu > li ul ul {
+  top: 0px;
+  left: 180px;
+  -webkit-transition: 750ms all;
+  transition: 750ms all;
+}
+
+ul.menu ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  left: 185px;
+}
+
+.first {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.first .bg-red {
+  background: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/revslider/slider5/86138-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 170px 0;
+  z-index: 1;
+}
+
+.first .bg-red h1 {
+  font-weight: 800;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+
+.first .bg-red h4 {
+  font-weight: 600;
+  color: White;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  line-height: 1.4em;
+}
+
+.first .bg-red p {
+  font-size: 17px;
+  color: White;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
+.first .bg-red button {
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: white;
+  background: #505050;
+  font-weight: 600;
+  border: none;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.first .bg-red button:hover {
+  color: #f04040;
+  background: white;
+}
+
+.first .bg-red .dinamik-background {
+  background-size: calc(100% + 150px);
+  width: 1000px;
+  height: 419px;
+  background: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/revslider/slider5/a25a3-car-logo.png) -25px -50px;
+}
+
+.first .bg-red .dinamik-background .mcar {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  right: -45%;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.first .bg-red .dinamik-background .mlight {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-45%, -10%);
+          transform: translate(-45%, -10%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.first .bg-black {
+  background-image: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/revslider/slider5/ec93e-bg2.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  padding: 170px 0;
+  background-position: center center;
+}
+
+.first .bg-black .dinamik-background {
+  background-size: calc(100% + 350px);
+  width: 1000px;
+  height: 419px;
+  background: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/revslider/slider5/a8766-car-img4.png) -25px -50px;
+}
+
+.first .bg-black .benz-car {
+  position: relative;
+}
+
+.first .bg-black .benz-car .benz-mercedes {
+  opacity: 1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.first .bg-black .benz-car .benz-mercedes img {
+  width: 250px;
+  height: 250px;
+}
+
+.first .bg-black .benz-car .benz-light {
+  position: absolute;
+  -webkit-transform: translate(-10%, 85%);
+          transform: translate(-10%, 85%);
+}
+
+.first .bg-black .benz-car .benz-light img {
+  display: none;
+}
+
+.first .bg-black .benz-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-left: 35px;
+  letter-spacing: 1.5px;
+}
+
+.first .bg-black .benz-content h3 {
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  margin-left: 35px;
+  letter-spacing: 1px;
+}
+
+.first .bg-black .benz-content p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  margin-left: 35px;
+  color: White;
+}
+
+.first .bg-black .benz-content button {
+  padding: 10px 20px;
+  background: #d61414;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  margin-left: 35px;
+}
+
+#inventory button {
+  padding: 10px 30px;
+  border: none;
+  background: #e63a2e;
+  color: white;
+  -webkit-transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#inventory button:hover {
+  background: #3b3b3b;
+}
+
+#inventory .brends {
+  background-image: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/2013/06/15.jpg?id=133);
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  height: 250px;
+  padding: 30px;
+  color: white;
+}
+
+#inventory .dealership {
+  background-image: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/2013/06/17.jpg?id=135);
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  padding: 30px;
+  color: white;
+}
+
+#inventory .affordable {
+  background-image: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/2013/06/16.jpg?id=134);
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  padding: 30px;
+  color: white;
+}
+
+#ferrari .text-ferrari {
+  position: relative;
+  top: 50px;
+}
+
+#ferrari .text-ferrari i {
+  font-size: 25px;
+  color: #f04040;
+}
+
+#ferrari .text-ferrari p {
+  color: gray;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
+#ferrari .ferrari-img {
+  overflow: hidden;
+}
+
+#ferrari .ferrari-img img {
+  position: relative;
+  bottom: -90px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#ferrari .ferrari-img img:hover {
+  bottom: -30px !important;
+}
+
+#sell .girl {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 50px;
+  text-align: right;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/2017/01/01-7.jpg?id=1896);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/2017/01/01-7.jpg?id=1896);
+}
+
+#sell .girl button {
+  padding: 10px 25px;
+  border: none;
+  background: #f03d3d;
+  color: white;
+  font-weight: 700;
+  border-radius: 2px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#sell .girl button:hover {
+  background: #3b3b3b;
+  color: white;
+}
+
+#sell .girl .text {
+  margin-left: 300px;
+}
+
+#sell .girl .img {
+  position: absolute;
+  bottom: 2px;
+}
+
+#sell .boy {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 50px;
+  text-align: left;
+  background: #f33535;
+  color: white;
+}
+
+#sell .boy button {
+  padding: 10px 25px;
+  border: none;
+  background: white;
+  color: red;
+  font-weight: 700;
+  border-radius: 2px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+#sell .boy button:hover {
+  background: #3b3b3b;
+  color: white;
+}
+
+#sell .boy img {
+  position: absolute;
+  bottom: 2px;
+}
+
+#services {
+  padding: 70px 0;
+}
+
+#services i {
+  font-size: 30px;
+  color: #f34d4d;
+}
+
+#services p {
+  color: gray;
+}
+
+#services:hover .text .hr1 {
+  width: 200px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#services .text .hr1 {
+  width: 50px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#services .text .hr2 {
+  position: relative;
+  width: 100px;
+  top: 10px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#redcar {
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+}
+
+#redcar .car-first {
+  position: relative;
+}
+
+#redcar .car-first img {
+  position: absolute;
+  left: -25%;
+  top: 20%;
+  text-align: left;
+}
+
+#redcar .car-second {
+  position: relative;
+}
+
+#redcar .car-second img {
+  position: absolute;
+  text-align: center;
+}
+
+#redcar .car-third {
+  position: relative;
+}
+
+#redcar .car-third img {
+  position: relative;
+  right: -25%;
+  top: 20%;
+  text-align: right;
+}
+
+#vehicle {
+  overflow: hidden;
+}
+
+#vehicle .text {
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+
+#vehicle p {
+  color: grey;
+  letter-spacing: 1px;
+}
+
+#vehicle h2 {
+  font-weight: 700;
+  color: #292929;
+}
+
+#vehicle .hr1 {
+  width: 50px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#vehicle .hr2 {
+  position: relative;
+  width: 100px;
+  top: 10px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#vehicle .box {
+  width: 20%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+#vehicle .box img {
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  overflow: hidden;
+}
+
+#vehicle .box .overlay {
+  position: absolute;
+  height: 35px;
+  width: 100%;
+  left: 0%;
+  top: -15%;
+  background: #f33535;
+  color: white;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#vehicle .box .overlay p {
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  color: #fff;
+  cursor: pointer;
+}
+
+#vehicle .box .overlay p:hover {
+  color: #000;
+}
+
+#vehicle .box .overlay .overlay-icon {
+  position: absolute;
+  margin-top: 300px;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  left: 43%;
+  text-align: center;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+#vehicle .box:hover img {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+#vehicle .box:hover .overlay {
+  top: 0%;
+}
+
+#vehicle .box:hover .overlay-icon {
+  margin-top: 50px;
+}
+
+#count {
+  padding: 100px 0;
+  background-image: url(https://cardealer.potenzaglobalsolutions.com/wp-content/uploads/revslider/slider5/86138-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#count .cont {
+  position: relative;
+}
+
+#count .cont .icon {
+  position: relative;
+  left: 20%;
+  font-size: 30px;
+  color: white;
+}
+
+#count .cont .hr1 {
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background: white;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 0%;
+  top: 20%;
+}
+
+#count .cont .hr2 {
+  position: absolute;
+  width: 35px;
+  height: 1px;
+  background: white;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 0%;
+  top: 57%;
+}
+
+#count .cont .counter {
+  position: absolute;
+  left: 24%;
+  font-size: 25px;
+  color: white;
+  font-weight: b;
+}
+
+#news {
+  background: whitesmoke;
+  padding: 100px 0;
+}
+
+#news .blog {
+  position: relative;
+}
+
+#news .blog .date-box {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 6px 16px;
+  border-radius: 2px;
+  background: #e63a2e;
+  color: white;
+  font-weight: 700;
+}
+
+#news .blog .blog-content {
+  position: relative;
+  left: -1%;
+  margin: -20px 10px 0;
+  -webkit-box-shadow: 0px 3px 0px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 0px 1px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+#news .blog .blog-content .blog-admin-main {
+  position: relative;
+  text-align: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #e3e3e3;
+  background: white;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-admin {
+  clear: both;
+  display: inline-block;
+  padding: 10px 0 4px;
+  background: white;
+  position: relative;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-admin img {
+  width: 50px;
+  height: 50px;
+  display: table-cell;
+  float: left;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-admin span {
+  float: left;
+  vertical-align: middle;
+  font-size: 14px;
+  padding-top: 13px;
+  margin-left: 15px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right {
+  float: right !important;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right ul {
+  padding: 0 0 0 15px;
+  margin: 0px;
+  list-style-type: disc;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right ul li {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right ul .meta {
+  display: inline-block;
+  text-align: center;
+  border-left: 1px solid #e3e3e3;
+  padding: 11px 20px;
+  position: relative;
+  right: 0%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right ul .meta:hover {
+  color: #e93434;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right ul .shr {
+  display: inline-block;
+  text-align: center;
+  border-left: 1px solid #e3e3e3;
+  padding: 11px 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right ul .shr:hover {
+  color: #e93434;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right .share {
+  position: relative;
+}
+
+#news .blog .blog-content .blog-admin-main .blog-right .share .blog-social {
+  display: none;
+  float: left;
+}
+
+#news .blog .blog-text {
+  background: white;
+  border-bottom: 2px solid #e3e3e3;
+  padding: 20px;
+}
+
+#news .blog .blog-text .hr1 {
+  width: 50px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#news .blog .blog-text .hr2 {
+  position: relative;
+  width: 100px;
+  top: 10px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#news .blog .blog-text h4 {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#news .blog .blog-text h4:hover {
+  color: #e93434;
+}
+
+#news .blog:hover .hr1 {
+  width: 100px;
+}
+
+#news .blog:hover .hr2 {
+  width: 150px;
+}
+
+#news .hr1 {
+  width: 50px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#news .hr2 {
+  position: relative;
+  width: 100px;
+  top: 10px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#company {
+  padding: 75px 0;
+}
+
+#company .hr1 {
+  width: 50px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#company .hr2 {
+  position: relative;
+  width: 100px;
+  top: 10px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#company .box {
+  width: 20%;
+}
+
+#arrival {
+  padding: 80px 0;
+  background: whitesmoke;
+}
+
+#arrival:hover .slick-prev {
+  margin-left: 0;
+  opacity: 1;
+  background: white;
+}
+
+#arrival:hover .slick-next {
+  margin-right: 0px;
+  opacity: 1;
+  background: white;
+}
+
+#arrival .slick-prev,
+#arrival .slick-next {
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  padding-left: 2px;
+  display: inline-block;
+  color: #db2d2e;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#arrival .slick-prev {
+  margin-left: 25px;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  opacity: 0;
+}
+
+#arrival .slick-next {
+  margin-right: 25px;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  opacity: 0;
+}
+
+#arrival .hr1 {
+  width: 50px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#arrival .hr2 {
+  position: relative;
+  width: 100px;
+  top: 10px;
+  margin: 0 auto;
+  background: #f72020;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#arrival .item .car-content {
+  text-align: center;
+  background: white;
+  width: 265px;
+  border-bottom: 3px solid #e9e7e7;
+  padding: 20px;
+}
+
+#arrival .item .car-content h5 {
+  color: #e93434;
+  font-size: 19px;
+}
+
+#arrival .item .car-content p {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#arrival .item .car-content img {
+  width: 90px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 68px;
+}
+
+#arrival .item .car-item {
+  width: 265px;
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#arrival .item .car-item img {
+  width: 265px;
+  height: 190px;
+  display: block;
+}
+
+#arrival .item .car-item .car-overlay {
+  position: absolute;
+  background: rgba(240, 36, 36, 0.623);
+  width: 265px;
+  height: 0px;
+  top: 0%;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+#arrival .item .car-item .car-overlay i {
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
+  font-size: 20px;
+  color: white;
+  margin: 5px;
+}
+
+#arrival .item .car-item .car-list {
+  position: absolute;
+  width: 265px;
+  height: 30px;
+  margin-top: 60px;
+  top: 84%;
+  left: 0%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+#arrival .item .car-item .car-list span {
+  margin-left: 10px;
+  color: gray;
+}
+
+#arrival .item .car-item:hover .car-overlay {
+  height: 190px;
+}
+
+#arrival .item .car-item:hover .car-overlay i {
+  opacity: 1;
+}
+
+#arrival .item .car-item:hover .car-list {
+  margin-top: 0px;
+}
+
+footer {
+  background: #D7D8D8;
+}
+
+footer .sos-icon-box1, footer .sos-icon-box2, footer .sos-icon-box3, footer .sos-icon-box4, footer .sos-icon-box5, footer .sos-icon-box6, footer .sos-icon-box7, footer .sos-icon-box8 {
+  width: 12%;
+  padding: -1px 15px;
+  background: #D7D8D8;
+  color: #555454;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer .sos-icon-box1 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box1 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box1:hover {
+  background: #3A5897;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #426bc2;
+          box-shadow: 0 0 10px #426bc2;
+}
+
+footer .sos-icon-box2 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box2 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box2:hover {
+  background: #2aabb4;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #0cceff;
+          box-shadow: 0 0 10px #0cceff;
+}
+
+footer .sos-icon-box3 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box3 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box3:hover {
+  background: #DD4B80;
+  color: white;
+}
+
+footer .sos-icon-box4 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box4 i {
+  margin-left: 0px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box4:hover {
+  background: #E13138;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #DD4B80;
+          box-shadow: 0 0 10px #DD4B80;
+}
+
+footer .sos-icon-box5 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box5 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box5:hover {
+  background: #35C6EA;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #18f7ff;
+          box-shadow: 0 0 10px #18f7ff;
+}
+
+footer .sos-icon-box6 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box6 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box6:hover {
+  background: #C3222B;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #f53c46;
+          box-shadow: 0 0 10px #f53c46;
+}
+
+footer .sos-icon-box7 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box7 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box7:hover {
+  background: #005CFF;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #1f7df8;
+          box-shadow: 0 0 10px #1f7df8;
+}
+
+footer .sos-icon-box8 {
+  border-bottom: 1px solid rgba(185, 180, 180, 0.651);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+footer .sos-icon-box8 i {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+footer .sos-icon-box8:hover {
+  background: #0073B1;
+  color: white;
+  -webkit-box-shadow: 0 0 10px #0baaff;
+          box-shadow: 0 0 10px #0baaff;
+}
+
+footer #footer-main {
+  font-size: 14px;
+  line-height: 2em;
+}
+
+footer #footer-main i {
+  color: rgba(218, 42, 42, 0.925);
+}
+
+footer #footer-main span {
+  color: gray;
+}
+
+footer #footer-main p {
+  color: gray;
+}
+
+footer #footer-main hr {
+  background: red;
+  width: 20px;
+  height: 1px;
+}
+
+footer #footer-main input {
+  background: rgba(177, 169, 169, 0.438);
+  border: none;
+  padding: 5px 20px;
+  color: gray;
+}
+
+footer #footer-main button {
+  padding: 5px 15px;
+  background: #f33535;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  margin-top: 10px;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
+}
+
+footer #footer-main button:hover {
+  background: #292828;
+}
+
+#footer-main-end {
+  margin-top: 50px;
+}
+
+#footer-main-end .end-end hr {
+  background: #f33535;
+  width: 25px;
+  height: 1px;
+}
+
+#footer-main-end .end-end p {
+  font-size: 15px;
+  color: gray;
+}
+
+#footer-main-end .end-end h4 {
+  color: rgba(110, 107, 107, 0.829);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#footer-main-end .end-end button {
+  background: #f01d28;
+  color: white;
+  height: 40px;
+  width: 100px;
+  font-size: 12px;
+  border: none;
+  margin-top: 50px;
+  border-radius: 3px;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
+}
+
+#footer-main-end .end-end button:hover {
+  background: #3b3b3b;
+  -webkit-box-shadow: 0 0 10px rgba(122, 0, 0, 0.925);
+          box-shadow: 0 0 10px rgba(122, 0, 0, 0.925);
+}
+
+#footer-end {
+  margin-top: 50px;
+  background: black;
+  padding: 25px 0;
+  color: #d1cccc;
+}
+/*# sourceMappingURL=style.css.map */
